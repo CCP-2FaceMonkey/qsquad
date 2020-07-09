@@ -34,8 +34,8 @@ const Layout = ({ children }) => {
         }}
       >
         <main>{children}</main>
-        <footer>
-          © Quarantine squad
+        <footer style={{padding: '2rem 0' }}>
+          {/* © Quarantine squad */}
         </footer>
       </div>
     </>

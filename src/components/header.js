@@ -1,11 +1,12 @@
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
+import Image from "../components/image"
 
 const Header = ({ siteTitle }) => (
   <header
     style={{
-      background: `#111d2a`,
+      background: `#000`, //#111d2a
       marginBottom: `1.45rem`,
     }}
   >
@@ -14,9 +15,14 @@ const Header = ({ siteTitle }) => (
         margin: `0 auto`,
         maxWidth: 960,
         padding: `1.45rem 1.0875rem`,
+        display: 'grid',
+        gridTemplateColumns: '1fr 1fr',
       }}
     >
-      <h1 style={{ margin: 0 }}>
+      <div style={{ maxWidth: `100px` }}>
+      <Image imageName="gatsby-astronaut.png"/>
+      </div>
+      <h1 style={{ margin: 0, alignSelf: 'center' }}>
         <Link
           to="/"
           style={{
