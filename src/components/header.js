@@ -22,7 +22,7 @@ const Header = ({ siteTitle }) => (
       <div style={{ maxWidth: `100px` }}>
       <Image imageName="gatsby-astronaut.png"/>
       </div>
-      <h1 style={{ margin: 0, alignSelf: 'center' }}>
+      <h1 style={{ margin: 0, alignSelf: 'center', justifySelf: 'end' }}>
         <Link
           to="/"
           style={{
